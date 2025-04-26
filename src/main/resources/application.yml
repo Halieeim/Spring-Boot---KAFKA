@@ -1,3 +1,5 @@
+server.port: 81
+
 spring:
   application:
     name: KAFKA
@@ -19,3 +21,6 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
 #      value-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+topic:
+  name: ptv-events
